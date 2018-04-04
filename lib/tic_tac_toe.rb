@@ -122,7 +122,7 @@ end
 
 def play()
   if won?
-    winner=winner
+    winnerName=winner
     puts "Congratulations #{winner}!"
   elsif draw?
     puts "Cat's Game!"
