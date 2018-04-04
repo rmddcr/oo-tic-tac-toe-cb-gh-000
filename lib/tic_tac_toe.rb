@@ -133,7 +133,14 @@ def play()
     if valid_move?(index)
       move(index,current_player)
       display_board
-      play
+      if won?
+        winnerName=winner
+        puts "Congratulations #{winner}!"
+      elsif draw?
+        puts "Cat's Game!"
+      else
+        play
+      end
     end
 
   end
